@@ -126,6 +126,13 @@ h2 {
   font-size: xx-large;
 }
 
+.color-text-button {
+  color: #fff;
+}
+.color-text-button:hover {
+  color: #f3f3f3;
+}
+
 /* Fonctionnement box */
 #fonctionnement {
   margin: 3% 5%;

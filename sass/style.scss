@@ -117,6 +117,13 @@ header{
         font-size: xx-large;
     }
 
+    .color-text-button {
+        color: $cd-whitetext;
+            &:hover  {
+                color: $cd-darkengray;
+            }
+    }
+
 /* Fonctionnement box */
 #fonctionnement {
     margin: 3% 5%;
