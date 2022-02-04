@@ -260,7 +260,7 @@ ul {
         }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 991px) { /*tablette */
     /* Localisation bar */
     .fa-map-marker-alt
     {
@@ -290,7 +290,7 @@ ul {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) { /* Telephone */
     /* Localisation bar */
     .fa-map-marker-alt
     {
