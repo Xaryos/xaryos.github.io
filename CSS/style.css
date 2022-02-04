@@ -165,6 +165,9 @@ h2 {
   background: #9256dc21;
   color: #9356DC;
 }
+.card-tuto:hover > i {
+  color: #9356DC;
+}
 .card-tuto::before {
   counter-increment: compteListe 1;
   content: counter(compteListe) " ";
@@ -220,6 +223,7 @@ h2 {
   background-color: white;
   box-shadow: 0 5px 10px 0 #999;
   margin: 2%;
+  position: relative;
 }
 
 .img_restaurant-card {
@@ -251,7 +255,9 @@ h2 {
   color: #1b6150;
   border-radius: 0.2rem;
   padding: 0.5rem;
-  /* position: absolute; */
+  position: absolute;
+  top: 1rem;
+  right: 0.75rem;
 }
 
 /* Footer */

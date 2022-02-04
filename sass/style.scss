@@ -149,8 +149,12 @@ header{
    position: relative;
    transition-duration: 300ms;
 
-        &:hover{
+        &:hover  {
             background: $cd-primary-lighten;
+            color: $cd-primary;
+        }
+
+        &:hover > i {
             color: $cd-primary;
         }
 
@@ -207,7 +211,8 @@ header{
     border-radius: 15px;
     background-color: white;
     box-shadow: 0 5px 10px 0 #999;
-    margin: 2%
+    margin: 2%;
+    position: relative;
 }
 
 .img_restaurant-card 
@@ -240,7 +245,9 @@ header{
     color: $cd-greentext;
     border-radius: 0.2rem;
     padding: 0.5rem;
-    /* position: absolute; */
+    position: absolute;
+    top: 1rem;
+    right: .75rem;
 }
 
 /* Footer */
