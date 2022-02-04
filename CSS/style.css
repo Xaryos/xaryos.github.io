@@ -273,7 +273,8 @@ ul {
   color: #9356DC;
 }
 
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 765px) {
+  /*tablette */
   /* Localisation bar */
   .fa-map-marker-alt {
     margin-right: 3%;
@@ -298,14 +299,16 @@ ul {
     display: flex;
     align-items: center;
     flex-direction: column;
+    width: 100%;
   }
 
   .card-tuto {
     margin-bottom: 3%;
-    width: 35%;
+    width: 80%;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
+  /* Telephone */
   /* Localisation bar */
   .fa-map-marker-alt {
     margin-right: 5%;

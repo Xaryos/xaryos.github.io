@@ -260,7 +260,7 @@ ul {
         }
 }
 
-@media screen and (max-width: 991px) { /*tablette */
+@media screen and (max-width: 765px) { /*tablette */
     /* Localisation bar */
     .fa-map-marker-alt
     {
@@ -283,10 +283,11 @@ ul {
         display: flex;
         align-items: center;
         flex-direction: column;
+        width: 100%;
     }
     .card-tuto{
         margin-bottom: 3%;
-        width: 35%;
+        width: 80%;
     }
 }
 
