@@ -7,29 +7,33 @@
         <link rel="stylesheet" href="CSS/style.css">
         <link rel="stylesheet" href="CSS/Normalize.css"/>
             <title> Ohmyfood | La palette du goût </title> <!-- Page La palette du goût -->
+
     </head>
 <body>
-    <header>
-        <a href="./index.html">
-            <div class="header-back-icon">
-                <i class="fas fa-arrow-left"></i>
-            </div>
-        </a>
-        <img src="../Maquettes_Ohmyfood/images/logo/ohmyfood.png" alt="main_logo">
+    <header class="header-box"> <!-- Titre header -->
+        <div class="header-back-icon">
+            <a href="./index.html">
+            <i class="fas fa-arrow-left fa-lg"></i>
+            </a>
+        </div>
+        <div class="title-header">
+        <h1>ohmyfood</h1>
+        </div>
     </header>
 
 <div class="background-image">
     <img src="./Maquettes_Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="img_restaurant" class="top-background-image">
 </div>
 
+<div class="container">
 <div class="mainblock">
-    <div class="headerblock">
+    <div class="headerblock flexBetween">
         <h1>La palette du goût</h1>
             <div class="headerblock-like">
-                <i class="far fa-heart"></i>
+                <i class="far fa-heart fa-2x"></i>
             </div>
     </div>
-
+    <div class="menu-list flexBetween">
         <div class="block-list">
             <div class="title-list">
                 <h3>ENTRÉES</h3>
@@ -39,17 +43,21 @@
 
             <div class="card">
                 <div class="body-card">
-                    <h4>Fricassée d'escargot</h4>
-                    <p>Au piment d'espelette</p>
-                        <div class="card-price">
+                    <div class="inside-body">
+                    <h4 class="h4-menu">Fricassée d'escargot</h4>
+                    <p class="p-menu">Au piment d'espelette</p>
+                    </div>
+                        <div class="card-price flexCentre">
                             25€
                         </div>
                 </div>
             </div>
             <div class="card">
                 <div class="body-card">
-                    <h4>Foie gras de canard mi-cuit</h4>
-                    <p>Et ses copeaux de truffe noire</p>
+                    <div class="inside-body">
+                    <h4 class="h4-menu">Foie gras de canard mi-cuit</h4>
+                    <p class="p-menu">Et ses copeaux de truffe noire</p>
+                    </div>
                         <div class="card-price">
                             35€
                         </div>
@@ -57,8 +65,10 @@
             </div>
             <div class="card">
                 <div class="body-card">
-                    <h4>Oeuf au plat</h4>
-                    <p>Assaisonnée à la truffe sur lit de caviar</p>
+                    <div class="inside-body">
+                    <h4 class="h4-menu">Oeuf au plat</h4>
+                    <p class="p-menu">Assaisonnée à la truffe sur lit de caviar</p>
+                    </div>
                         <div class="card-price">
                             20€
                         </div>
@@ -75,8 +85,10 @@
 
             <div class="card">
                 <div class="body-card">
-                    <h4>Filet de boeuf aux herbes</h4>
-                    <p>Accompagné de sa ribambelle de légumes</p>
+                    <div class="inside-body">
+                    <h4 class="h4-menu">Filet de boeuf aux herbes</h4>
+                    <p class="p-menu">Accompagné de sa ribambelle de légumes</p>
+                    </div>
                         <div class="card-price">
                             40€
                         </div>
@@ -84,8 +96,10 @@
             </div>
             <div class="card">
                 <div class="body-card">
-                    <h4>Parmentier de queue de boeuf</h4>
-                    <p>À la truffe noire sur sa purée de panais</p>
+                    <div class="inside-body">
+                    <h4 class="h4-menu">Parmentier de queue de boeuf</h4>
+                    <p class="p-menu">À la truffe noire sur sa purée de panais</p>
+                    </div>
                         <div class="card-price">
                             35€
                         </div>
@@ -93,8 +107,10 @@
             </div>
             <div class="card">
                 <div class="body-card">
-                    <h4>Filet de Turbot</h4>
-                    <p>Aux agrumes</p>
+                    <div class="inside-body">
+                    <h4 class="h4-menu">Filet de Turbot</h4>
+                    <p class="p-menu">Aux agrumes</p>
+                    </div>
                         <div class="card-price">
                             44€
                         </div>
@@ -111,8 +127,10 @@
 
             <div class="card">
                 <div class="body-card">
-                    <h4>Paris-Brest</h4>
-                    <p>Revisité</p>
+                    <div class="inside-body">
+                    <h4 class="h4-menu" >Paris-Brest</h4>
+                    <p class="p-menu">Revisité</p>
+                    </div>
                         <div class="card-price">
                             18€
                         </div>
@@ -120,8 +138,10 @@
             </div>
             <div class="card">
                 <div class="body-card">
-                    <h4>Macaron au chocolat d'exception</h4>
-                    <p>Et glace à la vanille de Madagascar</p>
+                    <div class="inside-body">
+                    <h4 class="h4-menu">Macaron au chocolat d'exception</h4>
+                    <p class="p-menu">Et glace à la vanille de Madagascar</p>
+                    </div>
                         <div class="card-price">
                             22€
                         </div>
@@ -129,51 +149,58 @@
             </div>
             <div class="card">
                 <div class="body-card">
-                    <h4>Mousse au chocolat</h4>
-                    <p>Au piment d'espelette et à la truffe noire</p>
+                    <div class="inside-body">
+                    <h4 class="h4-menu">Mousse au chocolat</h4>
+                    <p class="p-menu">Au piment d'espelette et à la truffe noire</p>
+                    </div>
                         <div class="card-price">
                             23€
                         </div>
                 </div>
             </div>
         </div>
-
-        <div class="command-button">
+    </div>
+    <div class="block-footer flexCentre">
+        <div class="command-button flexCentre">
             Commander
         </div>
+    </div>
 
+</div>
 </div>
 
 
 
 
 <footer>
-    <div class="logo-footer">
-        <img class="color-logo-footer" src="./Maquettes_Ohmyfood/images/logo/ohmyfood@2x.svg" alt="main_logo_footer_svg">
+    <div class="container">
+        <div class="logo-footer">
+            <h2 class="h2-footer"> ohmyfood</h2>
+        </div>
+        <div class="content-footer">
+        <ul>
+            
+            <li>    
+                <a class="color-text" href="#"> 
+                <i class="fas fa-utensils color-text"></i>
+                   Proposer un restaurant 
+                </a> 
+            </li> 
+            <li>
+                <a class="color-text" href="#">
+                <i class="fas fa-hands-helping color-text"></i>
+                   Devenir partenaire
+                </a>
+            </li>
+            <li>
+                <a class="color-text" href="#"> Mentions légales </a>
+            </li>
+            <li>
+                <a class="color-text" href="mailto=contact@ohmyfood.com"> Contact </a>
+            </li>
+        </ul>    
+        </div>
     </div>
-    <div class="content-footer">
-    <ul>
-        
-        <li>    
-            <a href="#"> 
-            <i class="fas fa-utensils"></i>
-              Proposer un restaurant 
-            </a> 
-        </li> 
-        <li>
-            <a href="#">
-            <i class="fas fa-hands-helping"></i>
-               Devenir partenaire
-            </a>
-        </li>
-        <li>
-            <a href="#"> Mentions légales </a>
-        </li>
-        <li>
-            <a href="mailto=contact@ohmyfood.com"> Contact </a>
-        </li>
-    </ul>    
-    </div>
-</footer>
+    </footer>
 </body>
 </html>
