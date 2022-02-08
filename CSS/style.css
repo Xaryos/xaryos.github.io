@@ -287,6 +287,16 @@ ul {
   color: #9356DC;
 }
 
+.fa-utensils {
+  margin-right: 5px;
+  font-size: small;
+}
+
+.fa-hands-helping {
+  margin-right: 2px;
+  font-size: x-small;
+}
+
 @media screen and (max-width: 765px) {
   /*tablette */
   /* Localisation bar */
@@ -370,6 +380,11 @@ ul {
     box-shadow: 0 5px 10px 0 #999;
     margin: 2% 2%;
   }
+
+  /* Footer */
+  .margin-footer {
+    margin-left: 6%;
+  }
 }
 /* ===================   Pages Annexes ================= */
 /* Header */
@@ -406,10 +421,11 @@ ul {
 }
 
 /* bloc inside menu */
-/*.menu-list {
+.menu-list {
+  display: flex;
+  justify-content: space-between;
+}
 
-} 
-*/
 .block-list {
   width: 30%;
   overflow: hidden;
@@ -509,6 +525,14 @@ ul {
     height: 50%;
   }
 
+  .h4-menu {
+    padding: 2% 0 0 2%;
+  }
+
+  .p-menu {
+    padding: 2% 0 0 2%;
+  }
+
   /* command button */
   .command-button {
     padding: 2%;
@@ -550,4 +574,4 @@ ul {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=Style.css.map */
