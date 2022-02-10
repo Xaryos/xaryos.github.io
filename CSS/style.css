@@ -570,6 +570,32 @@ ul {
   padding: 5% 0 0 2%;
 }
 
+/* animation apparition card */
+.spawnAnim {
+  animation: AppearCard 1000ms ease-in-out 1;
+}
+.spawnAnim--2 {
+  animation: AppearCard 1500ms ease-in-out 1;
+  animation-delay: 150ms;
+}
+.spawnAnim--3 {
+  animation: AppearCard 1700ms ease-in-out 1;
+  animation-delay: 300ms;
+}
+
+@keyframes AppearCard {
+  0% {
+    opacity: 0;
+    display: none;
+    transform: translateY(5%);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @media screen and (max-width: 996px) {
   /*tablette */
   /* header annexe */

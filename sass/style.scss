@@ -519,7 +519,7 @@ ul {
     cursor: pointer;
     font-weight: bold;
     transition: 250ms;
-    
+
         &:hover {
             box-shadow: 5px 5px 5px  rgba(0,0,0,.25);
         }
@@ -565,8 +565,39 @@ ul {
 
 
 
+ /* animation apparition card */
+
+ .spawnAnim {
+     animation: AppearCard 1000ms ease-in-out 1;
+
+        &--2 {
+            animation: AppearCard 1500ms ease-in-out 1;
+            animation-delay: 150ms;
+        }
+
+        &--3 {
+            animation: AppearCard 1700ms ease-in-out 1;
+            animation-delay: 300ms;
+        }
+ }
 
 
+@keyframes AppearCard {
+    0% {
+        opacity: 0;
+        display: none;
+        transform: translateY(5%);
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
 
 
 
