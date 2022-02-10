@@ -87,7 +87,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    pointer-events: none; /* permet l'utilisation du site en fond*/
     animation: loading 2500ms 1 forwards;
 
         &_item {
@@ -289,6 +288,12 @@ header{
     box-shadow: 0 5px 10px 0 #999;
     margin: 2%;
     position: relative;
+    transition: 250ms ;
+
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px 0 $cd-itemgray;
+        }
 }
 
 .img_restaurant-card 
@@ -513,6 +518,11 @@ ul {
     color: $cd-whitetext;
     cursor: pointer;
     font-weight: bold;
+    transition: 250ms;
+    
+        &:hover {
+            box-shadow: 5px 5px 5px  rgba(0,0,0,.25);
+        }
 }
 
 /* card */ 
