@@ -540,10 +540,19 @@ ul {
   height: 5em;
   border-radius: 15px;
   overflow: hidden;
+  cursor: pointer;
+  /* Sliding green */
+}
+.card:hover .slideconfirm {
+  margin-right: -0.3rem;
+}
+.card:hover .slideicon {
+  animation: rotate 600ms ease-in-out;
 }
 
 .body-card {
   padding: 1%;
+  padding-bottom: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -552,6 +561,10 @@ ul {
 
 .inside-body {
   width: 90%;
+  padding-bottom: 1%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .card-price {
@@ -563,13 +576,46 @@ ul {
 .h4-menu {
   margin: 0;
   padding: 5% 0 0 2%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .p-menu {
   margin: 0;
   padding: 5% 0 0 2%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
+/* Animation slide coche */
+.slideconfirm {
+  width: 25%;
+  background-color: #99E2D0;
+  color: #fff;
+  margin: -1rem -6rem -1rem 1rem;
+  transition-duration: 500ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-check-circle {
+  color: #fff;
+  font-size: xx-large;
+}
+
+.slideicon {
+  padding-top: 10%;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
 /* animation apparition card */
 .spawnAnim {
   animation: AppearCard 1000ms ease-in-out 1;
@@ -642,6 +688,17 @@ ul {
     padding: 2%;
     width: 20%;
   }
+
+  /* slide bar */
+  .slideconfirm {
+    width: 20%;
+    margin: -1rem -9rem -1rem 1rem;
+  }
+
+  .slideicon {
+    padding-top: 0;
+    padding-bottom: 5%;
+  }
 }
 @media screen and (max-width: 768px) {
   /* Telephone */
@@ -675,6 +732,29 @@ ul {
     padding: 3%;
     width: 30%;
     margin-bottom: 5%;
+  }
+
+  /* card */
+  .card:hover .slideconfirm {
+    margin-right: -0.4rem;
+  }
+
+  .body-card {
+    padding: 1.5%;
+  }
+
+  .p-menu {
+    font-size: small;
+  }
+
+  /* Slide animation */
+  .slideconfirm {
+    width: 40%;
+  }
+
+  .slideicon {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
