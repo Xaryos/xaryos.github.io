@@ -1,0 +1,194 @@
+/* ===================   Pages Annexes ================= */
+/* Header */
+.header-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-back-icon {
+    position: absolute;
+    left: 3%;
+}
+/* Font image */
+.top-background-image {
+    width: 100%;
+    max-width: 100%;
+    max-height: 32em;
+    object-fit: cover;
+}
+
+/* menu bloc */
+
+.mainblock {
+    background-color: $cd-darkengray;
+    padding: 2%;
+    margin-top: -5em;
+    position: relative;
+    border-radius: 30px 30px 0 0;
+}
+.headerblock {
+    font-family: $ft-title;
+}
+
+
+/* bloc inside menu */
+
+.menu-list {
+    display: flex;
+    justify-content: space-between;
+} 
+
+
+
+.block-list {
+    width: 30%;
+    overflow: hidden;
+}
+.title-list {
+    font-weight: 100;
+}
+.underline {
+    width: 50px;
+    background-color: $cd-tertiary;
+    height: 4px;
+    margin-top: -1em;
+}
+
+
+.command-button {
+    margin: 2%;
+    padding: 1%;
+    background-image: linear-gradient($cd-secondary, $cd-primary);
+    width: 10%;
+    border-radius: 25px;
+    color: $cd-whitetext;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 250ms;
+
+        &:hover {
+            box-shadow: 5px 5px 5px  rgba(0,0,0,.25);
+        }
+}
+
+/* card */ 
+
+.card {
+    background-color: $cd-itemwhite;
+    padding: 0;
+    margin: 5% 0 2% 0;
+    width: 100%;
+    height: 5em;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    /* Sliding green */
+    &:hover .slideconfirm{
+        margin-right: -0.3rem;
+    }
+    &:hover .slideicon {
+        animation: rotate 600ms ease-in-out;
+    }
+}
+.body-card {
+    padding: 1%;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.inside-body {
+    width: 90%;
+    padding-bottom: 1%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.card-price {
+    align-self: end;
+    margin: 0 1% 2% 0;
+    font-weight: bold;
+}
+
+.h4-menu {
+    margin: 0; 
+    padding: 5% 0 0 2%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.p-menu {
+    margin: 0;
+    padding: 5% 0 0 2%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+           /* Animation slide coche */ 
+.slideconfirm
+{
+    width: 25%;
+    background-color: $cd-tertiary;
+    color: $cd-itemwhite;
+    margin: -1rem -6rem -1rem 1rem;
+    transition-duration: 500ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-check-circle {
+    color: $cd-itemwhite;
+    font-size: xx-large;
+}
+
+.slideicon {
+    padding-top: 10%;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    
+}
+
+ /* animation apparition card */
+
+ .spawnAnim {
+     animation: AppearCard 1000ms ease-in-out 1;
+
+        &--2 {
+            animation: AppearCard 1500ms ease-in-out 1;
+            animation-delay: 150ms;
+        }
+
+        &--3 {
+            animation: AppearCard 1700ms ease-in-out 1;
+            animation-delay: 300ms;
+        }
+ }
+
+
+@keyframes AppearCard {
+    0% {
+        opacity: 0;
+        display: none;
+        transform: translateY(5%);
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+@import "./breakpoint_annexes.scss";

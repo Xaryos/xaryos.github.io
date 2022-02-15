@@ -1,0 +1,109 @@
+@media screen and (max-width: 996px) { /*tablette */
+
+    /* header annexe */
+    .headerblock {
+        margin: 0 5% 0 5%;
+    }
+    .header-back-icon {
+        position: absolute;
+        left: 5%;
+    }
+
+    /* Menu bloc */
+    .mainblock {
+        margin-top: -10em;
+    }
+    /* menu liste */
+    .menu-list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 15% 0 15%;
+    }
+
+    .block-list {
+        width: 100%;
+    }
+
+    .card {
+        height: 50%;
+    }
+    .h4-menu {
+        padding: 2% 0 0 2%;
+    }
+    .p-menu {
+        padding: 2% 0 0 2%;
+    }
+    /* command button */
+
+    .command-button {
+        padding: 2%;
+        width: 20%;
+    }
+
+    /* slide bar */
+    .slideconfirm {
+        width: 20%;
+        margin: -1rem -9rem -1rem 1rem;
+    }
+    .slideicon {
+        padding-top: 0;
+        padding-bottom: 5%;
+    }
+}
+@media screen and (max-width: 768px) { /* Telephone */
+    
+    /* header annexe */
+    .headerblock {
+        margin: 0;
+    }
+    .header-back-icon {
+        position: absolute;
+        left: 7%;
+    }
+
+    /* Menu bloc */
+
+    .mainblock {
+        margin-top: -6em;
+    }
+
+    .menu-list {
+        margin: 0 5% 0 5%;
+    }
+
+    .block-list {
+        width: 100%;
+        margin-bottom: 10%;
+        overflow: hidden;
+        
+    }
+
+    /* command button */ 
+
+    .command-button {
+        padding: 3%;
+        width: 30%;
+        margin-bottom: 5%;
+    }
+    /* card */ 
+    .card {
+        &:hover .slideconfirm {
+            margin-right: -0.4rem;
+        }
+    }
+    .body-card {
+        padding: 1.5%;
+    }
+    .p-menu {
+        font-size: small;
+    }
+    /* Slide animation */ 
+    .slideconfirm {
+        width: 40%;
+    }
+    .slideicon {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}

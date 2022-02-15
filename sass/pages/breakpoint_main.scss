@@ -1,0 +1,83 @@
+@media screen and (max-width: 765px) { /*tablette */
+    /* Localisation bar */
+    .fa-map-marker-alt
+    {
+        margin-right: 3%;
+    }
+    /* nav box */
+    .main-nav-box
+    {
+        padding-bottom: 3%;
+    }
+    .nav_button {
+        margin: 3%;
+        padding: 2%
+    }
+    /* fonctionnement box */
+    .sizing {
+        text-align: center;
+    }
+    .liste-tuto {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .card-tuto{
+        margin-bottom: 3%;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) { /* Telephone */
+    /* Localisation bar */
+    .fa-map-marker-alt
+    {
+        margin-right: 5%;
+    }
+    /* nav box */
+    .main-nav-box
+    {
+        text-align: center;
+        padding: 1%;
+        padding-bottom: 5%;
+    }
+    .nav_button {
+        padding: 5%;
+        margin: 5%;
+    }
+
+    /* fonctionnement box */
+    .sizing {
+        text-align: start;
+        margin-left: 5%;
+    }
+    .liste-tuto {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 0;
+    }
+    .card-tuto{
+        width: 85%;
+    }
+/* Restaurant cards */
+    .restaurant-card-box {
+        width: 100%;
+        padding: 0;
+        
+    }
+    .restaurant-card
+    {
+        width: 100%;
+        border-radius: 15px;
+        background-color: white;
+        box-shadow: 0 5px 10px 0 #999;
+        margin: 2% 2%;
+    }
+    
+    /* Footer */ 
+    .margin-footer {
+        margin-left: 6%;
+    }
+}
