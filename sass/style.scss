@@ -319,7 +319,10 @@ header{
     cursor: pointer;
         &:hover {
             background-image: linear-gradient($cd-secondary, $cd-primary);
+            clip-path: polygon(9% 9%, 29% 8%, 43% 12%, 50% 21%, 56% 11%, 66% 8%, 85% 8%, 100% 22%, 100% 45%, 50% 100%, 0 43%, 0 24%);
+            color: transparent;
             transition-duration: 250ms;
+
         }
 }
 
@@ -605,7 +608,7 @@ ul {
         transform: rotate(0deg);
     }
     100% {
-        transform: rotate(-360deg);
+        transform: rotate(360deg);
     }
     
 }
